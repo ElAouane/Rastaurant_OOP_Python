@@ -1,6 +1,6 @@
 from People_class import People, Customer
-from Food_item_class import *
-
+from Food_item_class import FoodItem, Combos
+from Orders_Class import Order
 # As a restaurant owner i can create new customers
 customer1 = Customer('John', '21 down town Abi, London')
 customer2 = Customer('Anabela', 'Hackney, London')
@@ -19,5 +19,8 @@ drink1 = FoodItem('Water', 2, ['Water'])
 drink2 = FoodItem('Cocacola', 3, ['Others'])
 drink3 = FoodItem('Smoothies', 4, ['Orange', 'Carrots', 'Kiwi'])
 
-# 3 Combos
-
+# as a restaurant owner i can create new orders and add food item for a customer
+# Opening tab to order
+Order1 = Order(customer1)
+Order1.add_item_order(main3)
+Order1.add_item_order(drink1)
