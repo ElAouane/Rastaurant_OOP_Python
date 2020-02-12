@@ -21,6 +21,11 @@ drink3 = FoodItem('Smoothies', 4, ['Orange', 'Carrots', 'Kiwi'])
 
 # as a restaurant owner i can create new orders and add food item for a customer
 # Opening tab to order
-Order1 = Order(customer1)
-Order1.add_item_order(main3)
-Order1.add_item_order(drink1)
+order1 = Order(customer1)
+order1.add_item_order(main3)
+order1.add_item_order(drink1)
+
+print(order1)
+print(order1.items)
+for item in order1.items:
+    print(item.item, f'{item.price}')
